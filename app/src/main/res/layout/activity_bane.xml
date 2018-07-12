@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dfe2fb"
     android:padding="10dp"
-    tools:context="com.example.asus.mrkafandladytravels.MainActivity"
-    android:background="#dfe2fb">
+    tools:context="com.example.asus.mrkafandladytravels.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
         android:weightSum="1">
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView41"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/hafezie" />
+            android:src="@drawable/banedasht" />
 
         <TextView
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="شیراز"
+            android:text="دشت های کشاورزی در مسیر بانه"
             android:textColor="#000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -36,49 +36,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tabatabaeihouse" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="کاشان"
-            android:textColor="#000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/shomalbreakfast" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="شمال"
-            android:textColor="#000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView42"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
@@ -90,7 +48,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="بانه"
+            android:text="نمایی از کوه های زیبای اطراف بانه"
             android:textColor="#000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -99,11 +57,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView43"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/kishisland" />
+            android:src="@drawable/ghazaemahalikalanebane" />
 
         <TextView
             android:layout_width="match_parent"
@@ -111,7 +69,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="کیش"
+            android:text="غذای محلی بانه مختصر اما سنگین"
             android:textColor="#000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -119,28 +77,56 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/masjedjameyazd" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="یزد"
-            android:textColor="#000"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5a3ca2"
+                android:gravity="center"
+                android:text="مسیر قبلی"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#5a3ca2"
+                android:gravity="center"
+                android:text="مسیر بعدی"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5a3ca2"
+                android:gravity="center"
+                android:text="بازگشت"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
 </ScrollView>

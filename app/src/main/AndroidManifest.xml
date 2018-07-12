@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShirazActivity" />
+        <activity android:name=".KashanActivity" />
+        <activity android:name=".ShomalActivity" />
+        <activity android:name=".BaneActivity" />
+        <activity android:name=".KishActivity" />
+        <activity android:name=".YazdActivity"></activity>
     </application>
 
 </manifest>
