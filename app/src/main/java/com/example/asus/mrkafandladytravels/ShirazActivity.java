@@ -14,10 +14,10 @@ public class ShirazActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shiraz);
-        Button back, next;
-        back = (Button) findViewById(R.id.btnBack);
+        Button home, next;
+        home = (Button) findViewById(R.id.btnHome);
         next = (Button) findViewById(R.id.btnNext);
-        back.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ShirazActivity.this, MainActivity.class);

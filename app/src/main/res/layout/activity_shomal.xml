@@ -14,6 +14,17 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:text="شمال"
+            android:textColor="#000"
+            android:textSize="50sp" />
+
         <ImageView
             android:id="@+id/imageView31"
             android:layout_width="match_parent"
@@ -105,27 +116,15 @@
 
             <Button
                 android:id="@+id/btnBack"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#5a3ca2"
+                android:background="@drawable/background"
                 android:gravity="center"
-                android:text="مسیر قبلی"
+                android:text="بانه"
                 android:textColor="#fff"
                 android:textSize="20sp"
-                android:layout_weight="1"
                 android:layout_margin="10dp"/>
 
-            <Button
-                android:id="@+id/btnNext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#5a3ca2"
-                android:gravity="center"
-                android:text="مسیر بعدی"
-                android:textColor="#fff"
-                android:textSize="20sp"
-                android:layout_weight="1"
-                android:layout_margin="10dp"/>
 
         </LinearLayout>
 
@@ -138,7 +137,7 @@
                 android:id="@+id/btnHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#5a3ca2"
+                android:background="@drawable/background"
                 android:gravity="center"
                 android:text="بازگشت"
                 android:textColor="#fff"
